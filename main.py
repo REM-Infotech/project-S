@@ -63,7 +63,7 @@ def page2():
         
     return make_response(
         jsonify(
-        dados=listpassword
+        listpassword
         )
     )
 
@@ -87,7 +87,7 @@ def page3():
     
     return make_response(
         jsonify(
-        dados=liststatus
+        liststatus
         )
     )
 
