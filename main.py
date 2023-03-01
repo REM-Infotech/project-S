@@ -38,9 +38,7 @@ def mainpage():
 
     
     return make_response(
-        jsonify(
         listuser
-        )
     )
 
 # Password Route
