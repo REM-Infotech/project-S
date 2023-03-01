@@ -1,10 +1,10 @@
 from flask import Flask, make_response, jsonify
 import mysql.connector
 import os
-from app.mysql_config import HOST
-from app.mysql_config import USER
-from app.mysql_config import PASSWORD
-from app.mysql_config import DATABASE
+from mysql_config import HOST
+from mysql_config import USER
+from mysql_config import PASSWORD
+from mysql_config import DATABASE
 
 conexao = mysql.connector.connect(
 
@@ -86,4 +86,5 @@ def page3():
         )
     )
 
-app.run(host='0.0.0.0', port='80',debug=True)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port='80',debug=True)
