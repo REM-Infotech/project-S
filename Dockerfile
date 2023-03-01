@@ -1,4 +1,4 @@
 FROM python:3
-RUN pip install -r requirements.txt
+RUN pip install Flask mysql-connector-python 
 CMD python api.py
 
