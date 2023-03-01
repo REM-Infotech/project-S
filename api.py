@@ -8,4 +8,4 @@ app = Flask (__name__)
 def homepage():
     return render_template('index.html')
 
-app.run(host='0.0.0.0', port='80', debug=True)
+app.run(host='0.0.0.0', debug=True)
