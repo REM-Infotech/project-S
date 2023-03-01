@@ -10,4 +10,4 @@ app = Flask (__name__)
 def homepage():
     return render_template('index.html')
 
-app.run(port=int(os.environ.get("PORT", 8080)),host='0.0.0.0',debug=True)
+app.run(port=int(os.environ.get("PORT", 80)),host='0.0.0.0',debug=True)
