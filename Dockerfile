@@ -1,6 +1,6 @@
 FROM python:3
-COPY . /app
+COPY . /ApiConfig
 RUN pip install Flask mysql-connector-python
-WORKDIR /app 
+WORKDIR /ApiConfig
 CMD python api.py
 
