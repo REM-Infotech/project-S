@@ -1,4 +1,4 @@
 FROM python:3
-RUN pip install flask && pip install pandas
+RUN pip install -r requirements.txt
 CMD python api.py
 
