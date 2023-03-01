@@ -1,5 +1,5 @@
-from flask import Flask, render_template
-import pandas as pd
+from flask import Flask, make_response, jsonify
+import mysql.connector
 
 app = Flask (__name__)
 
