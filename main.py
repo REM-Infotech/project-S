@@ -1,10 +1,12 @@
 from flask import Flask, make_response, jsonify
 import mysql.connector
 import os
-from mysql_config import HOST
-from mysql_config import USER
-from mysql_config import PASSWORD
-from mysql_config import DATABASE
+
+DATABASE = 'reminfotech1'
+HOST = 'xmysql.reminfotech.net.br'
+USER = 'reminfotech1'
+PASSWORD = 'ProjectS2023@'
+
 
 conexao = mysql.connector.connect(
 
