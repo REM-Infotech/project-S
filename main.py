@@ -44,52 +44,52 @@ def mainpage():
     )
 
 # Password Route
-@app.route('/673a564541af31570f20969078a7c925711bf5f70c9ead75900d133f851bdedb604596579a10d5a7934bd8f01ee84a192022d974a0087daacdb1fdd1bf21e5ee',methods=['GET'])
-def page2():
+# @app.route('/673a564541af31570f20969078a7c925711bf5f70c9ead75900d133f851bdedb604596579a10d5a7934bd8f01ee84a192022d974a0087daacdb1fdd1bf21e5ee',methods=['GET'])
+# def page2():
    
-    ##PASSWORDS LIST
-    getpasswords = f'SELECT passwords FROM manage_system'
-    cursor.execute(getpasswords)
-    passwords = cursor.fetchall()
+#     ##PASSWORDS LIST
+#     getpasswords = f'SELECT passwords FROM manage_system'
+#     cursor.execute(getpasswords)
+#     passwords = cursor.fetchall()
 
-    listpassword = list()
-    for pws in passwords:
-        listpassword.append(
-            {
-                'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86': pws[0]
-            }
-        )
+#     listpassword = list()
+#     for pws in passwords:
+#         listpassword.append(
+#             {
+#                 'b109f3bbbc244eb82441917ed06d618b9008dd09b3befd1b5e07394c706a8bb980b1d7785e5976ec049b46df5f1326af5a2ea6d103fd07c95385ffab0cacbc86': pws[0]
+#             }
+#         )
 
         
-    return make_response(
-        jsonify(
-        listpassword
-        )
-    )
+#     return make_response(
+#         jsonify(
+#         listpassword
+#         )
+#     )
 
 #Status Users
-@app.route('/d544de60d14b2c82e81028a3cebdc08a3c8012b2cbaaf0aa505e50e2d2931c36143e9a5ee79d35e9c5be342ec0cda0c73248a12eaece875463dcdf25014dd9e9',methods=['GET'])
-def page3():
+# @app.route('/d544de60d14b2c82e81028a3cebdc08a3c8012b2cbaaf0aa505e50e2d2931c36143e9a5ee79d35e9c5be342ec0cda0c73248a12eaece875463dcdf25014dd9e9',methods=['GET'])
+# def page3():
     
-    ##STATUS LIST
-    statususer = f'SELECT status FROM manage_system'
-    cursor.execute(statususer)
-    status = cursor.fetchall()
+    #STATUS LIST
+#     statususer = f'SELECT status FROM manage_system'
+#     cursor.execute(statususer)
+#     status = cursor.fetchall()
 
-    liststatus = list()
-    for st in status:
-        liststatus.append(
-            {
-                'status': st[0]
-            }
-        )
+#     liststatus = list()
+#     for st in status:
+#         liststatus.append(
+#             {
+#                 'status': st[0]
+#             }
+#         )
     
     
-    return make_response(
-        jsonify(
-        liststatus
-        )
-    )
+#     return make_response(
+#         jsonify(
+#         liststatus
+#         )
+#     )
 
 
-app.run(host='0.0.0.0', port='80',debug=True)
+# app.run(host='0.0.0.0', port='80',debug=True)
